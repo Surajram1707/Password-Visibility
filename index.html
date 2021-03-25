@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Password Visibility</title>
+<script language="javascript">
+function toggle(){
+var getpwd = document.getElementById("pswrd");
+if(getpwd.type ==="text"){
+getpwd.type="password";
+}
+else{
+getpwd.type="text";
+}
+}
+</script>
+</head>
+<body>
+<center>
+<div class="container">
+Enter Password:<input class="input" id="pswrd" type="password">
+<div class="show_section">
+<p>
+<input class="checkbox" type="checkbox" onclick="toggle()"/>Show Password</p>
+
+</div>
+</div>
+</center>
+</body>
+</html>
